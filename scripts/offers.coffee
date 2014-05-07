@@ -28,8 +28,6 @@ module.exports = (robot) ->
         msg.send "Successfully added"
     catch
         msg.send "Error in understanding , sorry"
-    finally
-        msg.send "Error occured"
 
   robot.respond /remove offers/i, (msg) ->
     entry = []

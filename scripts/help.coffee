@@ -1,16 +1,17 @@
 # Description:
-#   Make sure that hubot knows the rules.
+#   Gets the help.
 #
 # Commands:
-#   hubot the rules - Make sure hubot still knows the rules.
+#   hubot help
 #
 # Notes:
-#   DON'T DELETE THIS SCRIPT! ALL ROBAWTS MUST KNOW THE RULES
+#   Fast help
 
 rules = [
   "1. map : Get Map of store.",
   "2. search <item> : Search item in store (get map)",
-  "3. compare <item> and <item> : Compares two items"
+  "3. compare <item> and <item> : Compares two items",
+  "4. show offers : Shows offers running in store"
   ]
 
 module.exports = (robot) ->

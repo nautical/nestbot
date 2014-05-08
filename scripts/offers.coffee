@@ -10,16 +10,19 @@ class Offer
     @time = new Date()
 
 module.exports = (robot) ->
-  robot.respond /show offers$/i, (msg) ->
+  robot.respond /show offers/i, (msg) ->
     out = ""
     for offer in robot.brain.data.offers
-        out += "--------\n"
+        out += "\n--------\n"
+        out += "GET "
         out += offer.item
-        out += "\n"
+        out += " ON "
         out += offer.offer 
-        out += "\n"
+        out += " TILL "
         out += offer.validity
         out += "\n"
+    if out == ""
+        out = "No offer available"
     msg.send out
 
   robot.respond /add (.*) offer on (.*) till (.*)/i, (msg) ->

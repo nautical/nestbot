@@ -10,8 +10,8 @@
 rules = [
   "Hello Dear Customer ,",
   "Thanks for visiting our store ",
-  "to get a Map of store type MAP",
-  "for other information type HELP"
+  "to get a Map of store , type : map",
+  "for other options like searching some item or offers , type : help"
   ]
 
 module.exports = (robot) ->
